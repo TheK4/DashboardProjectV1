@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--main-color);
+}
+
+nav.side-bar{
+    width: 5rem;
+    height: 100%;
+    background-color: var(--main-color);
+    box-shadow: 0px 0px 2px 0px rgb(65, 65, 65);
+    padding: 2.5rem 0 4rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+
+nav.side-bar.expandir{
+    width: 18.75rem;
+}
+
+.btn-expand{
+    width: 100%;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-expand > i{
+    color: var(--brand-color);
+    font-size: 1.875rem;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+
+ul li.ativo{
+    border-radius: 0.875rem;
+    background-color: var(--second-color);
+}
+
+ul li a .icon{
+    transition: .3s;
+}
+
+.effect-active span{
+    color: var(--white-txt-main);
+}
+
+ul li {
+    margin-right: 0;
+    padding-left: .85rem;
+}
+
+ul li.item-menu{
+    transition: .3s;
+}
+
+ul li.item-menu:hover{
+    border-radius: 0.875rem;
+    background-color: var(--second-color);
+}
+
+ul li.item-menu a{
+    color: var(--gray-txt-second);
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin: 1rem 0 1rem 0; 
+    padding: 1rem 4%;
+    display: flex;
+}
+
+ul li.item-menu a .txt-link{
+    display: flex;
+    margin-left: 4rem;
+    font-size: 1.125rem;
+    align-items: center;
+    transition: .6s;
+    opacity: 0;
+}
+
+nav.side-bar.expandir .txt-link{
+    margin-left: 2rem;
+    opacity: 1;
+}
+
+ul {
+    margin: .875rem;
+}
+
+/* Mini navbar click styles */
+
+/* .mini-side-bar{
+    width: 5rem;
+    height: 100%;
+    background-color: var(--main-color);
+    box-shadow: 0px 0px 2px 0px rgb(65, 65, 65);
+    padding: 2.5rem 0 4rem 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.margin-edit-mini{
+    margin: .875rem;
+}
+
+.hidden-txt{
+    color: transparent;
+} */
+
+/* Finish mini navbar click styles */
+
+:root{
+    --main-color: #242529ff;
+    --second-color: #36363Eff;
+    --white-txt-main: #F7F7F7ff;
+    --gray-txt-second: #828385ff;
+    --brand-color: #a566fd;
+}
